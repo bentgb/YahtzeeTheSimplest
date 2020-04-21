@@ -1,0 +1,89 @@
+/* diceApp */
+.dice_1{
+    width: 40px;
+    height: 40px;
+    background: url("img/dice_1.png") no-repeat;
+    background-size: contain;
+    margin:5px;
+}
+.dice_2{
+    width: 40px;
+    height: 40px;
+    background: url("img/dice_2.png") no-repeat;
+    background-size: contain;
+    margin:5px;
+}
+.dice_3{
+    width: 40px;
+    height: 40px;
+    background: url("img/dice_3.png") no-repeat;
+    background-size: contain;
+    margin:5px;
+
+}
+.dice_4{
+    width: 40px;
+    height: 40px;
+    background: url("img/dice_4.png") no-repeat;
+    background-size: contain;
+    margin:5px;
+}
+.dice_5{
+    width: 40px;
+    height: 40px;
+    background: url("img/dice_5.png") no-repeat;
+    background-size: contain;
+    margin:5px;
+}
+
+.dice_6{
+    width: 40px;
+    height: 40px;
+    background: url("img/dice_6.png") no-repeat;
+    background-size: contain;
+    margin:5px;
+}
+/* body and game */
+#logo{
+    width:8%;
+    height:8%;
+}
+
+header {
+   text-align: center;
+    alignment: center;
+    display:block;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    color: cornflowerblue;
+
+}
+
+body {
+    color: darkblue;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+textarea {
+    height: 15px;
+    width: 40px;
+    text-align: center;
+    alignment: center;
+    display:block;
+
+}
+
+header, body, button, input, select, textarea {
+    font-family: Open Sans,serif;
+}
+
+button{
+    color: darkblue;
+}
+ h3{
+     text-align: -webkit-center;
+ }
+

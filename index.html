@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Labbb</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <p>------------------SIMPLEST YATHZEE GAME EVER---------------------</p>
+    <img id="logo" src="img/crazygamer.jpg">
+</header>
+<body>
+<div id="app" class="row">
+    >
+    <div class="col span-1-of-3 box" >
+        <br>
+        <h3>Dices</h3>
+        <ul>
+            <li v-for="dice in dices" :key="dice.id" >
+                <button  :class="`dice_${dice.value}`" @click="holdOrReleaseDices(dice.id)"></button>
+            </li>
+        </ul>
+        <button @click="rollDices">Roll Dices!</button>
+    </div>
+
+    <div class="col span-1-of-3 box">
+        <br>
+        <h3>Score Table</h3>
+        <ul>
+            <li v-for="score in scores"  :key="score.id">
+                <article >
+                    {{score.text}}
+                    <textarea  @click="selectScore(score.id)" :disabled="score.isSelected">{{ score.value }}</textarea>
+                </article>
+            </li>
+        </ul>
+
+
+    </div>
+
+    <div class="col span-1-of-3 box">
+        <h3>Rules</h3>
+        <h4>You can win if you get a total of 60 points or more!</h4>
+        <p>You can roll dices for 3 times in each turn before you select your score.
+        <p>Be careful! Once you select your score option, you cannot disable it.Thanks my super-uber vue capabilities :)</p>
+        <p>You can hold and release dices by clicking on them in between your 3 turns</p>
+        <p>If you loved this game and are burning to play again just click on the following button!</p>
+        <button  @click="newGame" >New Game</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
